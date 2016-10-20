@@ -2,6 +2,14 @@ package sub2.exam.stuff;
 
 import sub2.cert.Beverage;
 
+/**
+ * Chapter I: Declaration and Data Access
+ *
+ * SubChapter 2:Define Classes
+ *
+ * SubSubChapter6: Class Declaration and Modifiers
+ *
+ */
 public class Tea extends Beverage{
 
     public Tea(){
