@@ -1,3 +1,4 @@
+package define-classes;
 
 /**
  * Chapter I, Declaration and Data Access. Section2, Define Classes.
