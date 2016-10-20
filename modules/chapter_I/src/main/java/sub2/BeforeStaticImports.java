@@ -7,9 +7,8 @@ package sub2;
  *
  * SubSubChapter5: Static Import Statement
  *
- * Launching applications with <i>java</i>
  */
-public class StaticImports
+public class BeforeStaticImports
 {
 
     public static void main(String... x)
