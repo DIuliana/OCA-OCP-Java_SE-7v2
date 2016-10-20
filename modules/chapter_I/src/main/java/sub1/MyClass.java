@@ -1,9 +1,13 @@
-package define-classes;
+package sub1;
 
 /**
- * Chapter I, Declaration and Data Access. Section2, Define Classes.
+ * Chapter I: Declaration and Data Access
  *
- * Launching Applications with Java
+ * SubChapter 2:Define Classes
+ *
+ * SubSubChapter3: Using the <i>javac</i> and <i>java</i>java Commands
+ *
+ *Launching applications with <i>java</i>
  */
 public class MyClass {
 
