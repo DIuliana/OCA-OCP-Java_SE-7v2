@@ -5,7 +5,7 @@ package sub1;
  *
  * SubChapter 2:Define Classes
  *
- * SubSubChapter3: Using the <i>javac</i> and <i>java</i>java Commands
+ * SubSubChapter2: Using the <i>javac</i> and <i>java</i>java Commands
  *
  *Launching applications with <i>java</i>
  */
