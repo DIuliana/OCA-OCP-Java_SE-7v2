@@ -5,11 +5,16 @@
 
     <bean id="knight" class="org.springinaction.knights.BraveKnight">
         <constructor-arg ref="quest"/>
+        <constructor-arg ref="minstrel"/>
+
     </bean>
 
     <bean id="quest" class="org.springinaction.knights.SlayDragonQuest">
         <constructor-arg value="#{T(System).out}"/>
     </bean>
-    
+
+    <bean id="minstrel" class="org.springinaction.knights.Minstrel">
+        <constructor-arg value="#{T(System).out}"/>
+    </bean>
 
 </beans>

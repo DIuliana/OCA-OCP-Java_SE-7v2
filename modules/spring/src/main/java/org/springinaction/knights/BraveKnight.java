@@ -7,14 +7,18 @@ public class BraveKnight implements Knight
 {
 
     Quest quest;
+    Minstrel minstrel;
 
-    public BraveKnight(Quest quest)
+    public BraveKnight(Quest quest, Minstrel minstrel)
     {
         this.quest = quest;
+        this.minstrel = minstrel;
     }
 
     public void embarkOnQuest()
     {
+        minstrel.singBeforeQuest();
         quest.embark();
+        minstrel.singAfterQuest();
     }
 }
