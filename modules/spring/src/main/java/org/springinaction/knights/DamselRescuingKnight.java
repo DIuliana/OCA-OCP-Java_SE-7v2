@@ -21,5 +21,8 @@ public class DamselRescuingKnight implements Knight
     {
         quest.embark();
     }
-    
+
+    //as we can see DamselRescuingKnight creates its own quest, a RescueDamselQuest in its constructor.
+    //this makes a DamselRescuingKnight  tightly coupled to a RescueDamselQuest and severely limits the knight's quest-embarking repertoire.
+    //if a damsel needs rescuing, this knight's there, but if a dragon needs slaying or a round table needs something, then this knight's going to gave to sit out.
 }
