@@ -1,4 +1,4 @@
-package sub2.ex1;
+package sub2.ex1.food;
 
 /**
  * Chapter I: Declaration and Data Access

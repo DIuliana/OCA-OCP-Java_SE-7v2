@@ -1,4 +1,4 @@
-package sub2.ex1.food;
+package sub2.ex1;
 
 import sub2.ex1.food.Fruit;
 
