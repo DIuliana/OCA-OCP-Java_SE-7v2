@@ -6,7 +6,7 @@ package org.springinaction.knights;
  * 1.1.2 Injecting dependencies
  *
  */
-public class RescueDamselQuest
+public class RescueDamselQuest implements Quest
 {
 
     public RescueDamselQuest()
@@ -16,6 +16,6 @@ public class RescueDamselQuest
 
     public void embark()
     {
-        System.out.println("Embark on quest!");
+        System.out.println("Embark on  rescue damsel quest!");
     }
 }
