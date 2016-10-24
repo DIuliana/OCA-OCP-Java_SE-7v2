@@ -17,12 +17,11 @@ public class BraveKnightTest {
     public void knightShouldEmbarkOnQuest(){
 
         Quest mockQuest=mock(Quest.class);
-        Minstrel mockMinstrel=mock(Minstrel.class);
 
-        BraveKnight braveKnight=new BraveKnight(mockQuest,mockMinstrel);
+        BraveKnight braveKnight=new BraveKnight(mockQuest);
         braveKnight.embarkOnQuest();
 
-        BraveKnight anotherBraveKnight=new BraveKnight(mockQuest,mockMinstrel);
+        BraveKnight anotherBraveKnight=new BraveKnight(mockQuest);
         anotherBraveKnight.embarkOnQuest();
 
         verify(mockQuest,times(2)).embark();
