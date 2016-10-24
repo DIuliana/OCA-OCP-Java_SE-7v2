@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
 
     <bean id="knight" class="org.springinaction.knights.BraveKnight">
         <constructor-arg ref="quest"/>
-        <constructor-arg ref="minstrel"/>
-
     </bean>
 
     <bean id="quest" class="org.springinaction.knights.SlayDragonQuest">
@@ -16,5 +20,21 @@
     <bean id="minstrel" class="org.springinaction.knights.Minstrel">
         <constructor-arg value="#{T(System).out}"/>
     </bean>
+
+    <aop:config>
+
+        <aop:aspect ref="minstrel">
+
+            <aop:pointcut id="embark" expression="execution(* *.embarkOnQuest(..))"/>
+
+            <!-- a before advice definition -->
+            <aop:before pointcut-ref="embark" method="singBeforeQuest"/>
+
+            <!-- an after advice definition -->
+            <aop:after pointcut-ref="embark" method="singAfterQuest"/>
+
+        </aop:aspect>
+
+    </aop:config>
 
 </beans>
