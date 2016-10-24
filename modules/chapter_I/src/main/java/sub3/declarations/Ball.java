@@ -12,7 +12,7 @@ package sub3.declarations;
  * SubSubChapter1: Declaring an Interface
  *
  */
-public class Ball implements ProtectedBounceable
+public class Ball implements DefaultAccessBounceable
 {
     public void bouce()
     {

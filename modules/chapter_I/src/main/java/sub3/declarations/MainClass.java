@@ -19,5 +19,8 @@ public class MainClass {
         sub3.testprotected.Ball  outPackageBall= new sub3.testprotected.Ball();
         outPackageBall.bouce();
 
+        Zap zap=new Zap();
+        zap.go();
+
     }
 }

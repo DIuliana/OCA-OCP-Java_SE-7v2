@@ -8,7 +8,7 @@ package sub3.declarations;
  * SubSubChapter1: Declaring an Interface
  *
  */
- interface ProtectedBounceable {
+ interface DefaultAccessBounceable {
 
     abstract public void bouce();
     public void setBouceFactor(int bf);
