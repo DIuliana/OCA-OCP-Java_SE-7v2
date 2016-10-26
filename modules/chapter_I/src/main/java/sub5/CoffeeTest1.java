@@ -8,14 +8,14 @@ package sub5;
  *
  */
 
-enum CoffeeSize
-{
-    BIG, HUGE, OVERWHELMING
-}
-
 class Coffee
 {
     CoffeeSize size;
+}
+
+enum CoffeeSize
+{
+    BIG, HUGE, OVERWHELMING
 }
 
 public class CoffeeTest1
