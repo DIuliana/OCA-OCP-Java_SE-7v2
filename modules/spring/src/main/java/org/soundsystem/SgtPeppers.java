@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  *
  */
 
-@Component
+@Component("lovelyBeanName")// or @Named("lovelyBeanName")
 public class SgtPeppers implements CompactDisc
 {
 
