@@ -10,6 +10,7 @@
     <version>4.0</version>
     <modules>
         <module>modules/chapter_I</module>
+        <module>modules/chapter_II</module>
         <module>modules/spring</module>
     </modules>
 
