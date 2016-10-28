@@ -6,9 +6,7 @@
     <groupId>oracle</groupId>
     <artifactId>chapter_I</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>../chapter_II</module>
-    </modules>
+
 
     <parent>
         <groupId>oracle</groupId>
