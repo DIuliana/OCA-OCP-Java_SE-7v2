@@ -1,7 +1,11 @@
 package inheritance;
-
 /**
- * Created by p3700639 on 10/27/2016.
+ * Chapter II: Object Orientation
+ *
+ * SubChapter 2:Inheritance and Polymorphism
+ *
+ * Inheritance-> scope: polymorphism
+ *
  */
 
 class AnotherGameShape
